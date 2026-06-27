@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r /requirements.txt
 # If you are sure to push into production 
 # Advantage to use an env variable is that your code is more portable if you were to deploy to another 
 # type of server
-CMD mlflow ui -p $PORT \
+CMD mlflow server -p $PORT \
 --host 0.0.0.0 \
 --allowed-hosts $HUGGINGFACE_SPACE \ 
 # replace with your 
