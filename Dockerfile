@@ -27,8 +27,8 @@ CMD mlflow ui -p $PORT \
 --allowed-hosts $HUGGINGFACE_SPACE \ 
 # replace with your 
 --cors-allowed-origins "https://$HUGGINGFACE_SPACE" \
---backend-store-uri $BACKEND_STORE_URI
-#--default-artifact-root $ARTIFACT_STORE_URI
+--backend-store-uri $BACKEND_STORE_URI \
+--default-artifact-root $ARTIFACT_STORE_URI
 
 # Read the doc: https://huggingface.co/docs/hub/spaces-sdks-docker
 # you will also find guides on how best to write your Dockerfile
