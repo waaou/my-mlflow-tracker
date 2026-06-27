@@ -89,6 +89,15 @@ Accuracy: 1.0
 🏃 View run persistent-mouse-123 at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2/runs/d3e6f98283c94a5ab3884139c46b8fa9
 🧪 View experiment at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2
 
+## Controle du contenu du S3 associé au service ml-flow tracker
+install de awscli
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    unzip awscliv2.zip
+    sudo ./aws/install
+    aws --version
+
+export AWS_SECRET_ACCESS_KEY=xxxxxxxx
+export AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
 
 fidda@BIBIFRANCK-2:~$ aws s3 ls s3://my-jedha-bucket-for-mlflow/2/models/m-f74925c4bbce4621b1e1b00c63042ae0/artifacts/
 2026-06-27 15:17:20        960 MLmodel
