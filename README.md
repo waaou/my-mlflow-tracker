@@ -24,6 +24,17 @@ docker run --rm -p 5000:5000 -e PORT=5000 -e BACKEND_STORE_URI="postgresql://neo
 export APP_URI=http://localhost:5000
 python train.py
 
+
+# depuis HuggingFace
+## lancement de train.py en local avec mlflow tracker sur HuggingFace et ARTIFACT_STORE_URI sur un bucket S3
+export APP_URI=APP_URI=https://franckidda-my-mlflow-tracker.hf.space
+export AWS_SECRET_ACCESS_KEY=xxxxxxxx
+export AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
+pip install boto3
+python train.py
+
+
+
 ## Get container logs (SSE)
 curl -N \
      -H "Authorization: Bearer $HF_TOKEN" \
@@ -35,7 +46,8 @@ curl -N \
      "https://huggingface.co/api/spaces/franckidda/my-mlflow-tracker/logs/build"
 
 
-##
+## mlflow CLI - necessite la variable MLFLOW_TRACKING_URI
+export MLFLOW_TRACKING_URI=https://franckidda-my-mlflow-tracker.hf.space
 (RLenv) fidda@BIBIFRANCK-2:~/jedha_architecte_ia/aifs-ft-01/M8-MLEngineering/D5/exercises/my-mlflow-tracker$ mlflow experiments search
 Experiment Id    Name                        Artifact Location  
 ---------------  --------------------------  -------------------
