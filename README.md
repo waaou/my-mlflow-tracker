@@ -31,7 +31,7 @@ python train.py
 # depuis HuggingFace
 ## lancement de train.py en local avec mlflow tracker sur HuggingFace et ARTIFACT_STORE_URI sur un bucket S3
 ```
-export APP_URI=APP_URI=https://franckidda-my-mlflow-tracker.hf.space
+export APP_URI=https://franckidda-my-mlflow-tracker.hf.space
 export AWS_SECRET_ACCESS_KEY=xxxxxxxx
 export AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
 pip install boto3
@@ -54,6 +54,7 @@ python train.py
 
 ## mlflow CLI - necessite la variable MLFLOW_TRACKING_URI
 ```
+pip install mlflow
 export MLFLOW_TRACKING_URI=https://franckidda-my-mlflow-tracker.hf.space
 (RLenv) fidda@BIBIFRANCK-2:~/jedha_architecte_ia/aifs-ft-01/M8-MLEngineering/D5/exercises/my-mlflow-tracker$ mlflow experiments search
 Experiment Id    Name                        Artifact Location  
