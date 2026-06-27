@@ -88,8 +88,10 @@ LogisticRegression model
 Accuracy: 1.0
 🏃 View run persistent-mouse-123 at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2/runs/d3e6f98283c94a5ab3884139c46b8fa9
 🧪 View experiment at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2
+```
 
 ## Controle du contenu du S3 associé au service ml-flow tracker
+```
 install de awscli
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     unzip awscliv2.zip
