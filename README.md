@@ -37,7 +37,7 @@ export AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
 pip install boto3
 python train.py
 ```
-## affichage du cript train.py
+## affichage du script train.py
 ```
 2026/06/27 15:13:18 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
 2026/06/27 15:13:26 WARNING mlflow.utils.autologging_utils: Encountered unexpected error during sklearn autologging: Unable to locate credentials
