@@ -37,7 +37,15 @@ export AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
 pip install boto3
 python train.py
 ```
-
+## affichage du cript train.py
+```
+2026/06/27 15:13:18 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/06/27 15:13:26 WARNING mlflow.utils.autologging_utils: Encountered unexpected error during sklearn autologging: Unable to locate credentials
+LogisticRegression model
+Accuracy: 1.0
+🏃 View run persistent-mouse-123 at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2/runs/d3e6f98283c94a5ab3884139c46b8fa9
+🧪 View experiment at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2
+```
 
 ## Get container logs (SSE)
 ```
@@ -78,16 +86,6 @@ Lifecycle Stage    : active
 Creation Time      : 1782565502537
 Last Update Time   : 1782565502537
 Tags               : 
-```
-
-## pip install boto3 + credential AWS dans la session active ou sera lancé le srcipt train.py
-```
-2026/06/27 15:13:18 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
-2026/06/27 15:13:26 WARNING mlflow.utils.autologging_utils: Encountered unexpected error during sklearn autologging: Unable to locate credentials
-LogisticRegression model
-Accuracy: 1.0
-🏃 View run persistent-mouse-123 at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2/runs/d3e6f98283c94a5ab3884139c46b8fa9
-🧪 View experiment at: https://franckidda-my-mlflow-tracker.hf.space/#/experiments/2
 ```
 
 ## Controle du contenu du S3 associé au service ml-flow tracker
