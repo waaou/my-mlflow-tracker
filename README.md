@@ -47,6 +47,7 @@ curl -N \
 
 
 ## mlflow CLI - necessite la variable MLFLOW_TRACKING_URI
+```
 export MLFLOW_TRACKING_URI=https://franckidda-my-mlflow-tracker.hf.space
 (RLenv) fidda@BIBIFRANCK-2:~/jedha_architecte_ia/aifs-ft-01/M8-MLEngineering/D5/exercises/my-mlflow-tracker$ mlflow experiments search
 Experiment Id    Name                        Artifact Location  
@@ -70,6 +71,7 @@ Lifecycle Stage    : active
 Creation Time      : 1782565502537
 Last Update Time   : 1782565502537
 Tags               : 
+```
 
 ## pip install boto3 + credential AWS dans la session active ou sera lancé le srcipt train.py
 2026/06/27 15:13:18 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
